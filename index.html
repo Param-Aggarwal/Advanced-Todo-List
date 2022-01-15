@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Advanced Todo List</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer charset="utf-8"></script>
+</head>
+<body>
+
+  <form id="new-todo-form">
+    <label for="todo-input">New Todo</label>
+    <input type="text" id="todo-input">
+    <button type="submit">Add Todo</button>
+  </form>
+
+  <ul id="list">
+  <template id="list-item-template">
+    <li class="list-item">
+      <label class="list-item-label">
+        <input type="checkbox" data-list-item-checkbox>
+        <span data-list-item-text></span>
+      </label>
+      <button data-button-delete>Delete</button>
+    </li>
+  </template>
+  </ul>
+
+
+</body>
+</html>

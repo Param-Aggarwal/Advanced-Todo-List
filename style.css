@@ -1,0 +1,54 @@
+*{
+  font-size: 1.2rem;
+}
+body{
+  padding: 20px;
+}
+
+button {
+  cursor: pointer;
+  padding: 2px 15px;
+}
+
+#new-todo-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#new-todo-form > * {
+  margin: .25rem;
+}
+
+#list {
+  padding: 0;
+}
+
+#todo-input{
+  width: 90vw;
+  max-width: 500px;
+}
+
+.list-item {
+  list-style: none;
+  margin: 5px;
+}
+
+.list-item-label:hover,
+[data-list-item-checkbox]:hover {
+  cursor: pointer;
+}
+
+.list-item-label:hover > [data-list-item-text] {
+  color: #333;
+  text-decoration: line-through;
+}
+
+[data-list-item-checkbox]:checked ~ [data-list-item-text] {
+  text-decoration: line-through;
+  color: #AAA;
+}
+
+[data-button-delete] {
+  margin-left: .5rem;
+}
